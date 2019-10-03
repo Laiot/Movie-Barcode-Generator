@@ -22,7 +22,7 @@ def collect_frames(movie):
         s, i = movie.read()
         for i in range(30):                 # The argument of range() is the number of skipped frames for every iteration.
             if s:
-                s, i = movie.read()
+                s, i = movie.grab()
     return res
 
 
